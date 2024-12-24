@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: test-example
+  datasource:
+    url: jdbc:postgresql://localhost:9999/
+    username: adm
+    password: adm
+    driverClassName: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+server:
+  port: 8282
+
+#spring:
+#  application:
+#    name: test-example
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#    password:
+#    driverClassName: org.h2.Driver
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    hibernate:
+#      ddl-auto: create-drop
+#    show-sql: true
+#  h2:
+#    console:
+#      enabled: false
+#server:
+#  port: 8282
